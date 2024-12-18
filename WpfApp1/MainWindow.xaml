@@ -7,25 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Name="g1" Width="1*"/>
-            <ColumnDefinition Name="g2" Width="1*"/>
-            <ColumnDefinition Name="g3" Width="1*"/>
-            <ColumnDefinition Name="g4" Width="1*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Name="g5" Height="1*"/>
-            <RowDefinition Name="g" Height="1*"/>
-        </Grid.RowDefinitions>
-        <Image Grid.Row="0" Grid.Column="0" Source="imeg/1.jpg" Margin="30" />
-        <Image Grid.Row="0" Grid.Column="1" Source="imeg/2.jpg" Margin="30"/>
-        <Image Grid.Row="0" Grid.Column="2" Source="imeg/1.jpg" Margin="30"/>
-        <Image Grid.Row="0" Grid.Column="3" Source="imeg/2.jpg" Margin="30"/>
-        <Image Grid.Row="1" Grid.Column="0" Source="imeg/3.jpg" Margin="30"/>
-        <Image Grid.Row="1" Grid.Column="1" Source="imeg/4.jpg" Margin="30"/>
-        <Image Grid.Row="1" Grid.Column="2" Source="imeg/3.jpg" Margin="30"/>
-        <Image Grid.Row="1" Grid.Column="3" Source="imeg/4.jpg" Margin="30"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="g1" Width="1*"/>
+                <ColumnDefinition Name="g2" Width="1*"/>
+                <ColumnDefinition Name="g3" Width="1*"/>
+                <ColumnDefinition Name="g4" Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Name="g5" Height="1*"/>
+                <RowDefinition Name="g" Height="1*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.Column="0" Source="imeg/1.jpg" Margin="30" />
+            <Image Grid.Row="0" Grid.Column="1" Source="imeg/2.jpg" Margin="30"/>
+            <Image Grid.Row="0" Grid.Column="2" Source="imeg/1.jpg" Margin="30"/>
+            <Image Grid.Row="0" Grid.Column="3" Source="imeg/2.jpg" Margin="30"/>
+            <Image Grid.Row="1" Grid.Column="0" Source="imeg/3.jpg" Margin="30"/>
+            <Image Grid.Row="1" Grid.Column="1" Source="imeg/4.jpg" Margin="30"/>
+            <Image Grid.Row="1" Grid.Column="2" Source="imeg/3.jpg" Margin="30"/>
+            <Image Grid.Row="1" Grid.Column="3" Source="imeg/4.jpg" Margin="30"/>
+            <Button Grid.Row="0" Grid.Column="0" Margin="30" Tag="1" Click="BtnClick"/>
+            <Button Grid.Row="0" Grid.Column="1" Margin="30" Tag="2" Click="BtnClick"/>
+            <Button Grid.Row="0" Grid.Column="2" Margin="30" Tag="1" Click="BtnClick"/>
+            <Button Grid.Row="0" Grid.Column="3" Margin="30" Tag="2" Click="BtnClick"/>
+            <Button Grid.Row="1" Grid.Column="0" Margin="30" Tag="3" Click="BtnClick"/>
+            <Button Grid.Row="1" Grid.Column="1" Margin="30" Tag="4" Click="BtnClick"/>
+            <Button Grid.Row="1" Grid.Column="2" Margin="30" Tag="3" Click="BtnClick"/>
+            <Button Grid.Row="1" Grid.Column="3" Margin="30" Tag="4" Click="BtnClick"/>
 
-
+         
+        </Grid>
+        <Button x:Name="to_start_the_game" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="434" Width="800" Click="to_start_the_game_Click" IsDefault="True" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="imeg/starting.jpg" Stretch="UniformToFill" TileMode="Tile" Opacity="1"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
